@@ -1,4 +1,4 @@
-**简体中文** · [English](README.md.en)
+[简体中文](README.md) · [English](README.en.md)
 
 # dsh-webview · 网页端
 

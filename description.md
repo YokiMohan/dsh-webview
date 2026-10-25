@@ -3,7 +3,7 @@
 ## 复制这一行，粘到 GitHub 的 About 描述框
 
 ```
-在 DSH 桌面端里直接打开 chat.deepseek.com：会话视图标签、左上角面板、主区域面板三个入口共享同一个已登录页面，切走不卸载、重启保持登录；只放行 deepseek.com，外链交系统浏览器；零宿主侧代码、零注入、不代发请求。桌面端专用。English README: README.md.en
+在 DSH 桌面端里直接打开 chat.deepseek.com：会话视图标签、左上角面板、主区域面板三个入口共享同一个已登录页面，切走不卸载、重启保持登录；只放行 deepseek.com，外链交系统浏览器；零宿主侧代码、零注入、不代发请求。桌面端专用。English README: README.en.md
 ```
 
 ## 关于「描述开头的跳转链接」
@@ -12,10 +12,14 @@ GitHub 的 About 描述框**只接受纯文本，不渲染 Markdown 链接**—�
 
 真正能点、而且就出现在仓库首页最上方的，是 **README 的正文**。所以语言跳转链接放在了 README 的第一行：
 
-- `README.md` 第一行：`**简体中文** · [English](README.md.en)`
-- `README.md.en` 第一行：`[简体中文](README.md) · **English**`
+- `README.md` 第一行：`[简体中文](README.md) · [English](README.en.md)`
+- `README.en.md` 第一行：`[简体中文](README.md) · [English](README.en.md)`
 
-About 描述里则保留纯文本的提示（`English README: README.md.en`），中英两边互相指路。
+About 描述里则保留纯文本的提示（`English README: README.en.md`），中英两边互相指路。
+
+## 为什么文件名是 `README.en.md` 而不是 `README.md.en`
+
+GitHub **只把扩展名为 `.md` 的文件渲染成 Markdown**。`README.md.en` 的扩展名是 `.en`，会被当作纯文本源码显示（点进去就是一屏代码）。所以英文版必须叫 `README.en.md`（或 `README-en.md`），`description.en.md` 同理。
 
 ## 备选：更短的 About 描述
 
