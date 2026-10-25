@@ -1,0 +1,48 @@
+{
+  "name": "dsh-webview",
+  "version": "0.3.0",
+  "type": "module",
+  "description": "Web panel for DSH Desktop: open DeepSeek Web (chat.deepseek.com) in-app and stay signed in across restarts — no extra browser window. Entirely AI-generated; the Electron user-agent token is dropped so the guest is not flagged as an \"unusual environment\". DSH 桌面端「网页端」面板，内嵌 DeepSeek 网页端并跨重启保持登录，不必另开浏览器；完全由 AI 制作；已剥离 Electron UA 标记以避开「使用环境异常」提示。",
+  "author": "AI-generated (DSH agent), 2026",
+  "license": "MIT",
+  "icon": "./icon.svg",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "client-plugin",
+    "webview",
+    "panel",
+    "ai-generated"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "client": {
+      "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
