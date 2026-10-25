@@ -37,6 +37,14 @@
 
 ---
 
+## 截图
+
+<img src="assets/screenshot-1.jpg" alt="截图：左上角面板列里的网页端，主区域整屏打开 chat.deepseek.com，顶部是工具条" width="1920" height="1025">
+
+<img src="assets/screenshot-2.jpg" alt="截图：会话视图标签栏里的「网页端」，与「对话」「轨迹」并列" width="1920" height="1025">
+
+---
+
 ## 安装
 
 桌面端自带包管理器，**不需要自己装 Node.js**：

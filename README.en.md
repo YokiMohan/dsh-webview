@@ -37,6 +37,14 @@ Most comparable plugins give you one global panel. What makes dsh-webview differ
 
 ---
 
+## Screenshots
+
+<img src="assets/screenshot-1.jpg" alt="Screenshot: the web panel opened from the top-left rail, chat.deepseek.com filling the main area, toolbar on top" width="1920" height="1025">
+
+<img src="assets/screenshot-2.jpg" alt="Screenshot: the 网页端 tab in the conversation view tab bar, next to Chat and Trajectory" width="1920" height="1025">
+
+---
+
 ## Install
 
 DSH Desktop ships its own package manager, **no Node.js install required**:
